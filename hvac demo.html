@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Climate Control | Seattle's Premier HVAC Team</title>
+    <meta name="description" content="Family-owned heating and cooling serving Seattle-Tacoma. Experience Apple-level service with Washington's most trusted HVAC experts.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <svg id="splash-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 5L58.5 22.5H41.5L50 5Z" fill="#D4862A"/>
+            <path d="M50 95L41.5 77.5H58.5L50 95Z" fill="#D4862A"/>
+            <path d="M5 50L22.5 41.5V58.5L5 50Z" fill="#D4862A"/>
+            <path d="M95 50L77.5 58.5V41.5L95 50Z" fill="#D4862A"/>
+            <circle cx="50" cy="50" r="10" stroke="#D4862A" stroke-width="2"/>
+            <path d="M30 30L40 40M60 60L70 70M30 70L40 60M60 40L70 30" stroke="#D4862A" stroke-width="2"/>
+        </svg>
+    </div>
+
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 5L58.5 22.5H41.5L50 5Z" fill="currentColor"/>
+                <path d="M50 95L41.5 77.5H58.5L50 95Z" fill="currentColor"/>
+                <circle cx="50" cy="50" r="8" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span class="logo-text">CASCADE</span>
+        </a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#financing">Financing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+            <a href="tel:2065550198" class="phone-link">(206) 555-0198</a>
+            <a href="#contact" class="btn-quote">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-content">
+                <div class="eyebrow-container hero-eyebrow-anim">
+                    <div class="eyebrow-line"></div>
+                    <span class="eyebrow">WASHINGTON'S PREMIER HVAC COMPANY</span>
+                </div>
+                <h1 class="hero-headline">
+                    <span class="hero-h1-1-anim" style="display: block;">Seattle's Most</span>
+                    <span class="hero-h1-2-anim italic" style="display: block;">Trusted Team.</span>
+                </h1>
+                <p class="hero-body hero-body-anim">
+                    Serving Washington families since 2006. Heating, cooling, and emergency service — done with craftsmanship, not shortcuts. Honest pricing. No subcontractors. No runaround.
+                </p>
+                <div class="hero-btns hero-btns-anim">
+                    <a href="#contact" class="btn-primary magnetic">Get a Free Quote</a>
+                    <a href="tel:2065550198" class="btn-outline">Call (206) 555-0198</a>
+                </div>
+                <div class="hero-trust hero-trust-anim">
+                    <span>⭐ 4.9 Stars · 600+ Reviews</span>
+                    <span class="dot-separator">·</span>
+                    <span>✅ WA Licensed #CASCACC891BQ</span>
+                    <span class="dot-separator">·</span>
+                    <span>⚡ Same-Day Available</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="C:\Users\jayne_2tms3w9\.gemini\antigravity\brain\ccf6bc40-04b3-452e-8f64-f1c42ea23aa7\hero_hvac_pnw_final_1777946115059.png" alt="HVAC Professional" class="hero-image parallax-img">
+            </div>
+        </section>
+
+        <!-- Marquee Ticker -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span class="marquee-item">❄ AC Repair</span>
+                <span class="marquee-item">🔥 Furnace Install</span>
+                <span class="marquee-item">⚡ Same-Day Service</span>
+                <span class="marquee-item">🛡 No Subcontractors</span>
+                <span class="marquee-item">⭐ 4.9 Google Rating</span>
+                <span class="marquee-item">💳 0% Financing</span>
+                <span class="marquee-item">🕐 24/7 Emergency</span>
+                <span class="marquee-item">✅ WA Licensed</span>
+                <!-- Duplicate for seamless loop -->
+                <span class="marquee-item">❄ AC Repair</span>
+                <span class="marquee-item">🔥 Furnace Install</span>
+                <span class="marquee-item">⚡ Same-Day Service</span>
+                <span class="marquee-item">🛡 No Subcontractors</span>
+                <span class="marquee-item">⭐ 4.9 Google Rating</span>
+                <span class="marquee-item">💳 0% Financing</span>
+                <span class="marquee-item">🕐 24/7 Emergency</span>
+                <span class="marquee-item">✅ WA Licensed</span>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="bg-depth-text parallax-depth" data-speed="0.7">COMFORT</div>
+            <div class="section-header reveal">
+                <span class="section-eyebrow">OUR SERVICES</span>
+                <h2 class="section-headline">Everything Your Home Needs.<br>Done Right the First Time.</h2>
+                <p class="section-subline">From relentless rainy-season furnace failures to the rare Seattle heat dome — we've seen it all.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal" style="transition-delay: 0.1s;">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"/></svg>
+                        </div>
+                        <h3 class="service-title">Furnace Repair</h3>
+                        <p class="service-desc">Fast diagnosis, honest quote, same-day fix. Parts stocked for every major brand.</p>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.2s;">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3 class="service-title">Furnace Installation</h3>
+                        <p class="service-desc">Permits pulled, old unit hauled, space left cleaner than we found it.</p>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.3s;">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                        </div>
+                        <h3 class="service-title">AC Repair</h3>
+                        <p class="service-desc">Seattle summers are hotter every year. We're the call that actually gets answered.</p>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.4s;">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3 class="service-title">AC Installation</h3>
+                        <p class="service-desc">More WA homes need AC every year. We'll have you cool before the next heat wave.</p>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.5s;">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="service-title">Maintenance Plans</h3>
+                        <p class="service-desc">From $12/month. Tune-ups that catch $3,000 problems before they happen.</p>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.6s;">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <h3 class="service-title">24/7 Emergency</h3>
+                        <p class="service-desc">Heater out at midnight in January? We're already on our way. No after-hours fees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Strip -->
+        <section class="stats-strip reveal">
+            <div class="stat-item">
+                <div class="stat-number" data-target="18">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Jobs Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="4.9" data-decimal="1">0.0</div>
+                <div class="stat-label">Google Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="2" data-start="5" data-direction="down">5</div>
+                <div class="stat-label">Hour Response</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="bg-depth-text parallax-depth" data-speed="0.7">FAMILY</div>
+            <div class="about-container">
+                <div class="about-image-wrapper reveal">
+                    <img src="C:\Users\jayne_2tms3w9\.gemini\antigravity\brain\ccf6bc40-04b3-452e-8f64-f1c42ea23aa7\about_mercer_brothers_final_1777946135225.png" alt="The Mercer Brothers" class="about-image">
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-eyebrow">THE CASCADE STORY</span>
+                    <h2 class="section-headline">Tacoma-Born.<br>Family-Run.</h2>
+                    <p class="section-subline">
+                        Founded in 2006 by brothers Ryan and Josh Mercer, Cascade Climate Control was built on a simple promise: treat every home like it's our mother's. 
+                        <br><br>
+                        We don't use subcontractors. We don't use high-pressure sales. We're just a team of highly-skilled technicians who actually enjoy solving complex mechanical problems. When you call us, you're getting craftsmanship that lasts.
+                    </p>
+                    <div class="about-pills">
+                        <span class="trust-pill">No Subcontractors</span>
+                        <span class="trust-pill">Family Owned</span>
+                        <span class="trust-pill">Tacoma Native</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="bg-depth-text parallax-depth" data-speed="0.7">TRUST</div>
+            <div class="section-header reveal">
+                <span class="section-eyebrow">TESTIMONIALS</span>
+                <h2 class="section-headline">What Your Neighbors Say.</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card reveal" style="transition-delay: 0.1s;">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Furnace died Tuesday night, 38 degrees, pouring rain. Called at 8pm. Tech at my door by 10pm, fixed by 11. I've told every neighbor I have. Unreal."</p>
+                    <div class="review-author">Melissa K.</div>
+                    <span class="review-location">Bellevue, WA ✅ Google</span>
+                </div>
+                <div class="review-card reveal" style="transition-delay: 0.2s;">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Four quotes. Cascade came in $1,100 cheaper with better equipment. Crew wore shoe covers, cleaned everything, walked me through the thermostat."</p>
+                    <div class="review-author">Tom B.</div>
+                    <span class="review-location">Tacoma, WA ✅ Google</span>
+                </div>
+                <div class="review-card reveal" style="transition-delay: 0.3s;">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Tech found a cracked heat exchanger leaking carbon monoxide. Fixed same day. I had no idea. These guys saved my family's lives."</p>
+                    <div class="review-author">Andrea S.</div>
+                    <span class="review-location">Kirkland, WA ✅ Google</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">COMMON QUESTIONS</span>
+                <h2 class="section-headline">Frequently Asked.</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>How much does a furnace replacement cost in Washington?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most full installations in the Seattle area range between $4,500 and $9,000 depending on efficiency rating and home size. We provide firm, fixed quotes with no hidden fees.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>Do you offer free estimates?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, for all new installations and system replacements. For repair calls, we have a flat diagnostic fee that is waived if you proceed with the repair.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>How fast can you get to my home?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer same-day service for emergencies. On average, we respond to service requests in under 2 hours during business hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>Do you work on all HVAC brands?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Our technicians are factory-trained on all major brands including Trane, Lennox, Carrier, Rheem, and more.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>What does your maintenance plan include?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our Comfort Club includes two precision tune-ups per year, priority scheduling, and a 15% discount on all parts and labor.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>Do you offer financing?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We offer 0% interest for up to 18 months and low-interest long-term plans with same-day approval.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financing Section -->
+        <section class="financing" id="financing">
+            <div class="section-header reveal" style="text-align: center; margin: 0 auto 80px;">
+                <span class="section-eyebrow">FINANCING</span>
+                <h2 class="section-headline">Don't Let Price Stop You<br>From Being Comfortable.</h2>
+            </div>
+            <div class="financing-grid">
+                <div class="finance-card reveal">
+                    <span class="finance-value">0%</span>
+                    <span class="finance-label">For 18 Months</span>
+                </div>
+                <div class="finance-card reveal">
+                    <span class="finance-value">Low</span>
+                    <span class="finance-label">Monthly Payments</span>
+                </div>
+                <div class="finance-card reveal">
+                    <span class="finance-value">Instant</span>
+                    <span class="finance-label">Same-Day Approval</span>
+                </div>
+            </div>
+            <div class="finance-cta-wrapper reveal">
+                <a href="#" class="btn-primary magnetic">Check My Rate — No Credit Impact</a>
+            </div>
+        </section>
+
+        <!-- Offer Banner -->
+        <section class="offer-banner reveal">
+            <h2 class="offer-text">🌧️ Winter Special: Free Furnace Inspection With Any Repair Over $150</h2>
+            <a href="#contact" class="btn-dark magnetic">Claim This Offer →</a>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <div class="contact-form-side reveal">
+                    <span class="section-eyebrow">GET IN TOUCH</span>
+                    <h2 class="section-headline">Let's Fix Your Comfort.</h2>
+                    <form class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="(206) 555-0000">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Service Needed</label>
+                            <select>
+                                <option>Furnace Repair</option>
+                                <option>Furnace Installation</option>
+                                <option>AC Service</option>
+                                <option>Maintenance Plan</option>
+                                <option>Emergency Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Your Message</label>
+                            <textarea rows="4" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit magnetic">Send Request</button>
+                    </form>
+                </div>
+                <div class="contact-info-side reveal">
+                    <div class="info-item">
+                        <span class="info-label">Direct Line</span>
+                        <div class="info-value">(206) 555-0198</div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Emergency Service</span>
+                        <div class="info-value">Available 24/7/365</div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Serving Area</span>
+                        <div class="info-value">Seattle, Tacoma, Bellevue, Kirkland, and surrounding areas.</div>
+                    </div>
+                    <div class="map-container">
+                        <!-- Placeholder for map -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172139.4161662447!2d-122.4821471!3d47.6131746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1714850000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0; filter: grayscale(1) invert(0.9);" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5L58.5 22.5H41.5L50 5Z" fill="currentColor"/>
+                        <path d="M50 95L41.5 77.5H58.5L50 95Z" fill="currentColor"/>
+                        <circle cx="50" cy="50" r="8" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="logo-text">CASCADE</span>
+                </a>
+                <p class="footer-tagline">Providing premium climate control solutions for Washington families since 2006. Honest work, every single time.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">LI</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Furnace Repair</a></li>
+                    <li><a href="#">Furnace Installation</a></li>
+                    <li><a href="#">AC Service</a></li>
+                    <li><a href="#">AC Installation</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:2065550198">(206) 555-0198</a></li>
+                    <li><a href="mailto:info@cascadeclimate.com">info@cascadeclimate.com</a></li>
+                    <li>123 Rainier Ave S,<br>Seattle, WA 98144</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2024 Cascade Climate Control. All Rights Reserved.</span>
+            <span>WA Licensed #CASCACC891BQ</span>
+            <span><a href="#" style="color: inherit;">Privacy Policy</a> · <a href="#" style="color: inherit;">Terms of Service</a></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
